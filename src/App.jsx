@@ -8,7 +8,7 @@ function App() {
   const [moviePoster, setMoviePoster] = useState('');
 
   const searchMovie = () => {
-    const url = `http://www.omdbapi.com/?t=${userInput}&apikey=${apiKey}`;
+    const url = `https://www.omdbapi.com/?t=${userInput}&apikey=${apiKey}`;
 
     axios.get(url).then((response) => {
       setData(response.data);
